@@ -20,16 +20,16 @@ export default function DayPreview({data}:{data: DailyWeatherProps[]}){
     const day = data[0];
 
     return (
-        <div className={`flex flex-col items-center bg-sky-100 text-sky-900 rounded-2xl p-6 m-4 w-96 transition hover:scale-105 hover:shadow-lg`}>
-            <h2 className={`text-2xl font-bold mb-2`}>
+        <div className={`flex flex-col items-center bg-sky-100 text-sky-900 rounded-2xl p-6 !m-4 w-96 transition hover:scale-105 hover:shadow-lg`}>
+            <h2 className={`text-2xl font-bold !mb-2`}>
                 {day.conditions}
             </h2>
-            <p className={`text-sm italic text-gray-600 mb-3`}>
+            <p className={`text-sm italic text-gray-600 !mb-3 text-center`}>
                 {day.description}
             </p>
 
             <div className={`flex flex-col items-center justify-center bg-white/70 rounded-xl p-4 w-full`}>
-                <p className={`text-5xl font-semibold mb-1`}>
+                <p className={`text-5xl font-semibold !mb-1`}>
                     {day.temp}°F
                 </p>
                 <p className={`text-sm text-gray-700`}>
@@ -37,7 +37,7 @@ export default function DayPreview({data}:{data: DailyWeatherProps[]}){
                 </p>
             </div>
 
-            <div className={`flex justify-between w-full mt-4 text-sm`}>
+            <div className={`flex justify-between w-full !mt-4 text-sm`}>
                 <h2 className={`font-semibold`}>
                     High
                 </h2>
@@ -58,7 +58,7 @@ export default function DayPreview({data}:{data: DailyWeatherProps[]}){
                 </p>
             </div>
 
-            <p className={`text-xs text-gray-600 mt-3`}>
+            <p className={`text-xs text-gray-600 !mt-3`}>
                 Sunrise: {day.sunrise} | Sunset: {day.sunset}
             </p>
         </div>

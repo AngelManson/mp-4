@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export default function Header(){
-    const linkStying = `p-1 m-1 text-xl hover:underline`;
+    const linkStying = `p-1 !m-1 text-xl hover:underline`;
     return (
-        <header className={`flex flex-col justify-between items-center p-1 m-1 text-sky-900`}>
+        <header className={`flex flex-col justify-between items-center p-1 !m-1 text-sky-900`}>
             <h1 className={`text-3xl font-bold`}>
                 What&apos;s The Temperature Today?
             </h1>
